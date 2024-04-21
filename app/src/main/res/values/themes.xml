@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PamProjekt" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:statusBarColor">#BFBFBF</item>
+        <item name="android:navigationBarColor">
+            @color/dark_green
+        </item>
+
+    </style>
+
+    <style name="Theme.PamProjekt" parent="Base.Theme.PamProjekt" />
+
+
+</resources>

@@ -1,0 +1,15 @@
+Login and Registration: The application provides a secure login and registration system. Users can create a new account or log into an existing one. The password visibility can be toggled for user convenience.  
+Home Screen: Once logged in, users are taken to the home screen. This screen displays a list of posts from other users. Each post includes an image, a description, and the username of the person who posted it. Users can interact with these posts in several ways:  
+Like a Post: Users can like a post by clicking on the heart icon. The number of likes for each post is displayed below the post image.  
+Save a Post: Users can save a post for later viewing by clicking on the bookmark icon. Saved posts can be accessed from the SavedFragment.  
+Follow a User: Users can follow other users by clicking on the "Follow" button. This will add the followed user's posts to the follower's home screen.  
+Comment on a Post: Users can comment on a post by clicking on the comment icon. This opens a bottom sheet where users can write and send their comment.  
+Navigation Bar: The application includes a bottom navigation bar for easy navigation between different sections of the app. The navigation bar includes the following options:  
+Home: This takes the user back to the home screen.  
+Search: This option is currently set to display a toast message when clicked.  
+Add Post: This allows users to add a new post. Users can upload an image, write a description, and select a difficulty level for their post.  
+Saved Posts: This displays a list of posts that the user has saved.  
+Profile: This displays the user's profile, including their posts and followers.  
+Profile Screen: The profile screen displays the user's username, the number of posts they've made, the number of followers they have, and the number of likes they've received. It also displays a grid of images from the user's posts.  
+Add Post: Users can add a new post by clicking on the "+" button on the home screen. This opens a new screen where users can select an image, write a description, and select a difficulty level for their post. Once they've filled out this information, they can click on the "Create Post" button to add their post to the app.  
+Logout: Users can log out of the app by clicking on the logout button in the profile screen. This will take them back to the login screen.

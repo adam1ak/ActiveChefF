@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecAddActivity">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/b_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previewImage" />
+
+    <TextView
+        android:id="@+id/nextTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="New Post"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@+id/back_sec_add"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_sec_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nextTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nextTextView"
+        app:srcCompat="@drawable/backarrow" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/b_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextTextView" />
+
+    <EditText
+        android:id="@+id/descriptionSecAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/transparent"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="start|top"
+        android:hint="Tell us about recipe..."
+        android:inputType="textMultiLine"
+        android:maxLength="500"
+        android:maxLines="10"
+        android:textColorHint="@color/b_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create_post_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:width="290sp"
+        android:background="@drawable/buttton_shape"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Create Post"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_begg"
+                android:layout_width="130sp"
+                android:layout_height="32sp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/choice_shape"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Beginner" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_novice"
+                android:layout_width="95sp"
+                android:layout_height="32sp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/choice_shape"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Novice"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_inter"
+                android:layout_width="145sp"
+                android:layout_height="32sp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/choice_shape"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Intermediate" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_adv"
+                android:layout_width="115sp"
+                android:layout_height="32sp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/choice_shape"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Advanced" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_exp"
+                android:layout_width="90sp"
+                android:layout_height="32sp"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/choice_shape"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Expert" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/descriptionSecAdd"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionSecAdd"
+        app:srcCompat="@drawable/baseline_bar_chart_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Select difficulty"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/previewImage"
+        android:layout_width="0dp"
+        android:layout_height="320sp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        tools:srcCompat="@drawable/transparent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

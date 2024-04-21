@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#11161B</color>
+    <color name="white">#F5F5F5</color>
+    <color name="dark_green">#496E4C</color>
+    <color name="sixf_d_green">#A6588157</color>
+    <color name="sevf_d_green">#BF496E4C</color>
+    <color name="b_green">#709B67</color>
+    <color name="lime">#A3B18A</color>
+    <color name="b_gray">#5B5B5B</color>
+    <color name="d_gray">#323232</color>
+    <color name="fivef_d_gray">#8C323232</color>
+    <color name="sevenf_d_gray">#BF212122</color>
+</resources>
